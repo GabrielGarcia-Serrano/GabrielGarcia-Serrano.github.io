@@ -18,8 +18,11 @@ Imágenes en Sites --> public o directamente --> /imagen.jpg --> ![descripcion](
 Crear ropsitorio --> GabrielGarcia-Serrano.github.io
 Push a github:
 git init
-git add .
-git commit -m "first commit"
+git add .           --> importante
+git commit -m "first commit"    --> importante
 git branch -M main
 git remote add origin git@github.com:<username>/<repo-name>
-git push -u origin main
+git push -u origin main     --> importante
+
+Token:
+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
