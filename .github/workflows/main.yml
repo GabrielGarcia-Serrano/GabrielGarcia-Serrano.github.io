@@ -19,12 +19,11 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          personal_token: ${{ secrets.HUGO }}
-          external_repository: GabrielGarcia-Serrano/GabrielGarcia-Serrano.github.io
+          github_token: ${{ secrets.HUGO }}
+          # external_repository: GabrielGarcia-Serrano/GabrielGarcia-Serrano.github.io
           publish_dir: ./public
           #   keep_files: true
-          user_name: GabrielGarcia-Serrano
-          user_email: aa20.ggarcia46@iespabloserrano.com
-          publish_branch: master
+          # publish_branch: master
         #   cname: example.com
